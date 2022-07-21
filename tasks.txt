@@ -1,0 +1,10 @@
+**Code refactor script - process through all JS files to**
+1- Remove console logs
+2- Apply obfuscation on them
+
+
+**Game security exploit detection - process through all JS files to find common issues like**
+1- Remove console logs
+2- Apply obfuscation on them
+3- clear comments
+4- Easy variable search “game over/game start/score” and auto renames them

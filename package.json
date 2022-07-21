@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "gulp-print": "^5.0.2",
-    "gulp-prompt": "^1.2.0"
+    "gulp-prompt": "^1.2.0",
+    "gulp-strip-comments": "^2.5.2"
   }
 }

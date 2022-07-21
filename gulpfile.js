@@ -5,6 +5,7 @@ const JavaScriptObfuscator = require('gulp-javascript-obfuscator');
 const replace = require('gulp-replace');
 const prompt = require('gulp-prompt');
 const print = require('gulp-print').default;
+var strip = require('gulp-strip-comments');
 
 
 gulp.task('js-cleanup', () =>
@@ -22,6 +23,7 @@ gulp.task('game-cleanup', () =>
   .pipe(print(filepath => `built: ${filepath}`))
     .pipe(stripDebug()) 
     .pipe(JavaScriptObfuscator())
+    .pipe(strip())
     .pipe(replace('score', 'h123456'))
     .pipe(replace('Score', 'h123456'))
     .pipe(replace('game over', 'h223456'))
